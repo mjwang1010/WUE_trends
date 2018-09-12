@@ -88,6 +88,7 @@ for (i in 1:nsite) {
   siteyear <- unique(siteyear.hr[complete.cases(siteyear.hr)]) # remove NAs in the years
   
   # estimate each annual mean IWUE
+  # Possible improvement: combine all variables together (e.g., c(...)) when using "aggregate" method
   agg.mean.iwue.res <- aggregate(siteiwue, by=list(siteyear.hr), FUN='mean', na.rm=T)
   # agg.std.iwue.res <- aggregate(siteiwue, by=list(siteyear.hr), FUN='sd', na.rm=T)
   # 
