@@ -119,13 +119,13 @@ Rgas <- 8.3144598 # J mol-1 K-1
 
 ###
 # file paths and names
-infilepath1 = '/Volumes/Ocean/FLUXNET2015_Nov/'
-infilepath4 = '/Users/AbelGalois/Documents/Data/FLUXNET2015_PATCH1/'
-infilename3 <- '/Users/AbelGalois/Documents/Data/CO2/co2_mm_gl.txt' # CO2 concentration
-infilename1 <- '/Users/AbelGalois/Documents/MJ/WUE_proj_v1/results/SynFLX2015/months_peakgpp_allsites.csv' 
-infilename2 <- '/Users/AbelGalois/Documents/MJ/Flux_proj_v3/data/FLUXNET2015_siteinfo.csv'
-
-outfilepath1 <- '/Users/AbelGalois/Documents/MJ/WUE_proj_v1/results/SynFLX2015/'
+# Your own file paths and names
+infilepath1 = '.../FLUXNET2015_Nov/'
+infilepath4 = '.../FLUXNET2015_PATCH1/'
+infilename3 <- '.../co2_mm_gl.txt' # CO2 concentration
+infilename1 <- '.../SynFLX2015/months_peakgpp_allsites.csv' 
+infilename2 <- '.../FLUXNET2015_siteinfo.csv'
+outfilepath1 <- '...'
 
 ###
 # site information
