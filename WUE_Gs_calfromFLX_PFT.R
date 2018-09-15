@@ -7,6 +7,10 @@
 #5 G1 (stomatal slope) derive from Medlyn's model
 # Get peak-GPP-month hourly data
 # save in one file
+
+# The site info data ('FLUXNET2015_siteinfo.csv') is derived from Martin De Kauwe's collection: 
+# https://github.com/mdekauwe/FLUXNET2015_data
+
 #####
 rm(list = ls())
 
