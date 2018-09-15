@@ -11,11 +11,12 @@ library(lubridate)
 # Paths and names ---------------------------------------------------------
 
 # input file names 
-infilename1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015/peakmonth_hr_iwue_allsites1.csv'
-infilename2 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015/peakmonth_hr_wue_allsites1.csv'
+# Your own file paths and names
+infilename1 <- '.../peakmonth_hr_iwue_allsites1.csv'
+infilename2 <- '.../peakmonth_hr_wue_allsites1.csv'
 
-outfilepath1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015/'
-outfigpath1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015Fig/'
+outfilepath1 <- '.../SynFLX2015/'
+outfigpath1 <- '.../SynFLX2015Fig/'
 
 
 
@@ -87,8 +88,13 @@ for (i in 1:nsite) {
   sitemonth.hr <- month(sitetime.gmt)
   siteyear <- unique(siteyear.hr[complete.cases(siteyear.hr)]) # remove NAs in the years
   
+  ###
   # estimate each annual mean IWUE
   # Possible improvement: combine all variables together (e.g., c(...)) when using "aggregate" method
+  
+  # agg.mean.vars <- aggregate(c(siteiwue, sitegs, sitegpp, sitele, sitevpd, siteta, sitesr, sitepre), 
+  #                            by = list(siteyear.hr), FUN = 'mean', na.rm = T)
+  ###
   agg.mean.iwue.res <- aggregate(siteiwue, by=list(siteyear.hr), FUN='mean', na.rm=T)
   # agg.std.iwue.res <- aggregate(siteiwue, by=list(siteyear.hr), FUN='sd', na.rm=T)
   # 
