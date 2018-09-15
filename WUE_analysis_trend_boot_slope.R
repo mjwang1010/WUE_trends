@@ -42,9 +42,9 @@ boot_var_fun <- function(x, pft) {
 
 
 # File paths and names ----------------------------------------------------
-
+# Your own paths and names
 # riwue / rgpp / rgs / rle / rvpd / rta / rsr / rpre
-infilepath1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015/'
+infilepath1 <- '.../SynFLX2015/'
 tempname1 <- c('riwue_ann_trend.csv', 'rgpp_ann_trend.csv',
                'rgs_ann_trend.csv', 'rle_ann_trend.csv',
                'rca_ann_trend.csv', 'rvpd_ann_trend.csv',
@@ -55,7 +55,7 @@ infilename.list <- list.files(infilepath1, pattern = 'r*_ann_trend')
 infilename.list <- infilename.list[is.element(infilename.list, tempname1)]
 # infilename1 <- paste0(infilepath1, tempname1)
 outfilepath1 <- infilepath1
-outfigpath1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015Fig/'
+outfigpath1 <- '.../SynFLX2015Fig/'
 
 
 # Set parameters ----------------------------------------------------------
