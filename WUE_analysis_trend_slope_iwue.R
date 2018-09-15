@@ -67,12 +67,12 @@ ratio_trend_fun <- function(x, varname, vargroup) {
 
 #####
 
-# input file names
+# Your own file paths and names
 # NOTE: Be careful that in "peakmonth_hr_wue_allsites1.csv" the data is without filtering
-infilename1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015/peakmonth_hr_iwue_allsites1.csv'
-infilename2 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/data/FLUXNET_siteinfo2_forest.csv'
-outfilepath1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/results/SynFLX2015/'
-outfigpath1 <- '/Users/AbelGalois/Documents/MJ/Proj_WUE/Results/SynFLX2015Fig/'
+infilename1 <- '.../peakmonth_hr_iwue_allsites1.csv'
+infilename2 <- '.../FLUXNET_siteinfo2_forest.csv'
+outfilepath1 <- '.../SynFLX2015/'
+outfigpath1 <- '.../SynFLX2015Fig/'
 
 ###
 # estimate iWUE trend in summer
